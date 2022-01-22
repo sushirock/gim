@@ -1,0 +1,763 @@
+@charset "UTF-8";
+
+html{
+    font-size: 100%;
+}
+
+body{
+    margin: 0;
+    color: #333;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+// ヘッダー
+
+#bg-image{
+    background-image: url(sport.mainvisual1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    position: relative;
+    color: #fff;
+    
+
+    #maincopy{
+        position: absolute;
+        font-size: 2rem;
+        top: 150px;
+        left: 200px;
+    }
+
+    h1{
+        position: absolute;
+        font-size: 1.75rem;
+        top: 250px;
+        left: 200px;
+
+    }
+
+    #open{
+        position: absolute;
+        font-size: 2.5rem;
+        top: 300px;
+        left: 200px;
+        color: rgb(218, 24, 24);
+    }
+}
+
+// メイン
+
+#muryo{
+
+    margin-top: 150px;
+    border: rgb(221, 24, 24) 4px double;
+    h2{
+        text-align: center;
+        background-color:rgb(221, 24, 24) ;
+        color: #fff;
+
+    }
+
+    
+    
+    #muryo-flex{
+        display: flex;
+        padding: 10px 10px;
+        justify-content: space-between;
+        
+        #muryo-flex1{
+            width: 30%;
+            padding: 3%;
+            
+        }
+        
+        #muryo-flex2{
+            width: 30%;
+            padding: 3%;
+        }
+        
+        #muryo-flex3{
+            width: 30%;
+            padding: 3%;
+        }
+    }
+}
+
+#muryo p{
+    text-align: center;
+}
+
+
+#corona{
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+
+
+/*tabの形状*/
+.tab{
+	display: flex;
+	flex-wrap: wrap;
+}
+.tab li a{
+	display: block;
+	
+	margin:0 2px;
+	padding:10px 20px;
+}
+/*liにactiveクラスがついた時の形状*/
+
+
+
+// /*エリアの表示非表示と形状*/
+// .area {
+// 	display: none;/*はじめは非表示*/
+// 	opacity: 0;/*透過0*/
+// 	background: #000;
+// 	padding:50px 20px;
+// }
+
+// /*areaにis-activeというクラスがついた時の形状*/
+// .area.is-active {
+//     display: block;/*表示*/
+//     animation-name: displayAnime;/*ふわっと表示させるためのアニメーション*/
+//     animation-duration: 2s;
+//     animation-fill-mode: forwards;
+// }
+
+@keyframes displayAnime{
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+
+
+.tab{
+    display: flex;
+    margin-bottom: 0;
+    margin-left: 200px;
+
+    .current{
+        background: violet;
+    }
+
+
+    #tab-btn1{
+        
+        p{
+            margin-bottom: 0;
+            padding: 10px 30px;
+            background-color: rgba(218, 24, 24, 0.61);
+            border-radius: 3px;
+
+            a{
+                color: #000;
+            }
+
+        }
+        
+    }
+
+    #tab-btn2{
+        
+        p{
+            margin-bottom: 0;
+            padding: 10px 30px;
+            background-color: rgba(218, 24, 24, 0.61);
+            border-radius: 3px;
+
+            a{
+                color: #000;
+            }
+        }
+    }
+}
+
+
+#shisetsu{
+    
+    background: #000;
+    
+    
+    h2{
+        text-align: center;
+        color: #fff;
+        background:rgb(221, 24, 24) ;
+        padding: 30px 0;
+        
+    }
+    
+    #shisetsu1f{
+        width: 600px;
+        margin: 0 auto;
+    }
+    
+    #flex1{
+        display: flex;
+        width: 1000px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        
+    
+        #f1{
+            width: 400px;
+            
+
+            img{
+                width: 100%;
+            }
+            
+          
+        }
+    
+        #f2{
+            width: 400px;
+            
+        }
+    
+        #f3{
+            width: 400px;
+            
+        }
+    
+        #f4{
+            width: 400px;
+            
+        }
+    }
+    
+    #shisetsu2f{
+        width: 600px;
+        margin: 0 auto;
+        
+    }
+    
+    #flex2{
+        display: flex;
+        width: 1000px;
+        margin: 0 auto;
+        flex-wrap: wrap;
+        
+    
+        #f12{
+            width: 400px;
+            
+
+          
+        }
+    
+        #f22{
+            width: 400px;
+            
+        }
+    
+        #f32{
+            width: 400px;
+            
+        }
+    
+        #f42{
+            width: 400px;
+            
+        }
+    }
+
+
+}
+
+#image{
+    height: 300px;
+
+    img{
+        height: 300px;
+        object-fit: cover;
+    }
+}
+
+
+#program{
+    margin-top: 150px;
+    background: rgb(214, 178, 145);
+
+    h2{
+        text-align: center;
+        color:#fff;
+        background:rgb(221, 24, 24) ;
+        padding: 30px 0;
+        
+    }
+
+    #program-flex-top{
+        display: flex;
+
+        #program-flex1{
+
+            border-bottom: rgb(218, 24, 24) solid 3px;
+            border-right: solid 3px rgb(218, 24, 24);
+            
+            img{
+                width: 80%;
+                padding: 30px;
+            }
+        }
+        
+        #program-flex2{
+            border-bottom: rgb(218, 24, 24) solid 3px;
+            
+            img{
+                width: 80%;
+                padding: 30px;
+                padding-left: 55px;
+            }
+
+            p{
+                padding-left: 30px;
+            }
+        }
+
+ 
+    }
+
+    #program-flex-bottom{
+        display: flex;
+        padding-bottom: 30px;
+
+    
+        #program-flex3{
+
+            border-right: rgb(218, 24, 24) solid 3px;
+
+            img{
+                width: 80%;
+                padding: 30px;
+            }
+        }
+
+        #program-flex4{
+
+            img{
+                width: 80%;
+                padding: 30px;
+                padding-left: 55px;
+            }
+
+            p{
+                padding-left: 30px;
+            }
+        }
+    }
+
+
+
+}
+
+
+#price{
+    margin-top: 150px;
+    padding-bottom: 100px;
+    border-bottom: 3px solid rgb(218, 24, 24);
+
+    h2{
+        text-align: center;
+        background: rgb(218, 24, 24);
+        color: #fff;
+    }
+
+    table{
+        border-collapse: collapse;
+        border: solid 2px rgb(218, 24, 24);
+        width: 100%;
+    }
+
+    table th, table td{
+        border: dashed 1px #333;
+    }
+
+    th{
+        padding: 10px 20px;
+        font-size: 0.8rem;
+        background-color: #eee;
+    }
+
+    td{
+        padding: 10px 20px;
+        font-size: 0.8rem;
+    }
+
+
+}
+
+
+#moshikomi{
+    margin-top: 100px;
+    
+
+    h2{
+        text-align: center;
+        background: rgb(218, 24, 24);
+        color: #fff;
+        margin-bottom:30px ;
+    }
+
+    form{
+
+        margin-bottom: 250px;
+
+        dl{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+
+            dt{
+                width: 20%;
+                margin-bottom: 30px;
+
+                .must{
+                    background: rgb(218, 24, 24);
+                    border-radius: 5px;
+                    color: #fff;
+                    padding: 0 10px;
+                }
+            }
+
+            dd{
+                width: 80%;
+                margin-left: 0;
+                height: 60px;
+                
+                input{
+                    width: 100%;  
+                    height: 30px; 
+                    border-radius: 3px;
+                    border: solid 1px #555;
+                }
+
+                #name{
+                    width: 50%;
+                }
+
+                #tel{
+                    width: 70%;
+                }
+
+                #man{
+                    width: 50px;
+                }
+
+                #mantext{
+                    line-height: 30px;
+                }
+
+                #woman{
+                    width: 50px;
+                }
+
+                #womantext{
+                    line-height: 30px;
+                }
+
+                #other{
+                    width: 50px;
+                }
+
+                #othertext{
+                    line-height: 30px;
+                }
+
+                
+
+                textarea{
+                    width: 100%;
+                    border-radius: 3px;
+                    border: solid 1px #555;
+                }
+            }
+
+            #sex{
+                display: flex;
+                text-align: left;
+
+                
+                }
+            }
+        }
+
+        #security{
+
+            margin-top: 200px;
+            width: 500px;
+            margin: 0 auto;
+
+            h3{
+                text-align: center;
+            }
+
+            dl{
+                height: 400px;
+                overflow: scroll;
+                border: #333 solid 1px;
+            }
+            
+        }
+
+        #btn{
+            text-align: center;
+            margin-top: 50px;
+
+            a{
+                color: #fff;
+                background: rgb(233, 66, 15);
+                padding: 10px 30px;
+                transition: all ease 1s;
+            }
+
+            a:hover{
+                background: rgb(83, 30, 5);
+            }
+        }
+
+        
+
+
+    
+}
+
+
+#access{
+    margin-top: 150px;
+    background: #000;
+    color: #fff;
+
+    #access-flex{
+        display: flex;
+        align-items: center;
+
+        #access-flex1{
+            width: 50%;
+        }
+
+        #access-flex2{
+            width: 50%;
+
+            iframe{
+                padding: 30px;
+            }
+        }
+    }
+}
+
+footer{
+    background: #000;
+
+    small{
+        display: block;
+        text-align: center;
+        color: #eee;
+    }
+}
+
+
+@media screen and (max-width:800px) {
+
+
+    #bg-image{
+        background-size: cover;
+        height: 40vh;
+
+        #maincopy{
+            top: 50px;
+            left: 30px;
+            font-size: 1rem;
+        }
+
+        h1{
+            top: 70px;
+            left: 30px;
+        }
+
+        #open{
+            top: 100px;
+            left: 30px;
+        }
+        
+        
+        
+    }
+
+
+    #muryo{
+
+        #muryo-flex{
+            flex-direction: column;
+
+            #muryo-flex1{
+                width: 100%;
+
+                img{
+                    width: 90%;
+                }
+            }
+            #muryo-flex2{
+                width: 100%;
+
+                img{
+                    width: 90%;
+                }
+            }
+            #muryo-flex3{
+                width: 100%;
+
+                img{
+                    width: 90%;
+                }
+            }
+            
+        }
+    }
+    
+    .tab{
+            margin-left:0 ;
+            
+        }
+
+
+    #shisetsu1f{
+            width: 400px;
+            
+            img{
+                width: 350px;
+            }
+
+    }
+    #flex1{
+            flex-direction: column;
+
+
+    }
+
+    #shisetsu2f{
+            width: 400px;
+
+            img{
+                width: 350px;
+            }
+    
+
+        #flex2{
+            flex-direction: column;
+        }
+    }
+
+    #program{
+
+        #program-flex-top{
+            flex-direction: column;
+
+            #program-flex1{
+                border-right: none;
+            }
+        }
+
+        #program-flex-bottom{
+            flex-direction: column;
+
+            #program-flex3{
+                border-right: none;
+                border-bottom: solid 3px rgb(218, 24, 24);
+            }
+        }
+    }
+
+
+    #price{
+        padding: 0 1%;
+
+        padding-bottom: 50px;
+    }
+
+    #moshikomi{
+
+        form{
+            margin-bottom: 300px;
+        }
+
+        h2{
+            margin-bottom: 30px;
+        }
+
+        dt{
+            font-size: 0.75rem;
+        }
+
+        dd{
+            height: 20px;
+        }
+
+    }
+
+    #security{
+
+        dl{
+            font-size: 0.75rem;
+            width: 300px;
+            margin: 0 auto;
+            height: 100px;
+
+            dt{
+                margin-bottom: 5px;
+            }
+
+            dd{
+                margin-bottom: 25px;
+            }
+        }
+
+    }
+
+    #access{
+
+        #access-flex{
+            flex-direction: column;
+            align-items:unset;
+
+            #flex1{
+                text-align: center;
+                
+            }
+
+            iframe{
+                width: 300px;
+                padding: 0;
+            }
+        }
+    }
+
+    .wrap{
+        overflow: hidden;
+    }
+
+}
